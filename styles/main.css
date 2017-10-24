@@ -1,0 +1,14 @@
+body div, header
+{
+    max-width: 960px;
+}
+
+header
+{
+    margin: auto;
+}
+
+body > div.container-fluid
+{
+    padding: 0;
+}
