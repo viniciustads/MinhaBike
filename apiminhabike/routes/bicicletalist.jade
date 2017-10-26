@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h3.
+    minhasbicicletas
+  ul
+    each bicicleta, i in bicicletalist
+      li#bicicleta_list_item
+        a(href='#') #{bicicleta.Nomelocal} lives at #{bicicleta.HorarioFuncInicial} #{bicicleta.HorarioFuncFinal}

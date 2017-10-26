@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h3= title
+  form#form_add_bicicleta(name="addbicicleta", method="post", action="/addbicicleta")
+    span Nomelocal
+    span &nbsp;
+    input#input_name(type="text", placeholder="Nome do local", name="Nomelocal")
+    br
+    br
+    span HorarioFuncInicial
+    span &nbsp;
+    input#input_street(type="text", placeholder="Horario que abre a loja", name="HorarioFuncInicial")
+    br
+    br
+    span HorarioFuncFinal
+    span &nbsp;
+    input#input_city(type="text", placeholder="Horario que fecha a loja"", name="HorarioFuncFinal")    
+    br
+    br
+    button#submit_bicicleta(type="submit") submit
