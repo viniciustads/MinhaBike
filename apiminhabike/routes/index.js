@@ -1,5 +1,6 @@
 var express = require('express');
-var router = express.Router();
+var router = express();
+const MongoClient = require('mongodb').MongoClient
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,11 +9,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/thelist', function(req, res){
  
-  // Get a Mongo client to work with the Mongo server
-  var MongoClient = mongodb.MongoClient;
- 
   // Define where the MongoDB server is
-  var url = 'mongodb://localhost:27017/mihabike';
+  var url = 'mongodb://localhost:27017/minhabike';
  
  
   MongoClient.connect(url, function (err, db) {
