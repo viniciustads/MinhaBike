@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <title>Minha Bike</title>
+	<!-- Required meta tags -->
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">	
+	<link rel="stylesheet" href="./styles/main.css" >	
+  </head>
+  <body>
+	<header>
+	 <img src="./img/banner.jpg" width="100%" />
+	</header>
+	<div class="container-fluid">
+	  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010713;">
+			<a class="navbar-brand" href="./index.html">MinhaBike</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Adicionar bike<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Minhas trilhas</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+					<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+				</form>
+			</div>
+		</nav>		
+		<h3 class="page-header">Adicionar bike</h3>
+		<form id="addBike">
+			<div class="row">
+				<div class="form-group col-md-4">
+					<label for="Nomelocal">Nome</label>
+					<input type="text" required class="form-control" id="Nomelocal">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="MarcaModelo">Marca/Modelo</label>
+					<input type="text" class="form-control" id="MarcaModelo">
+				</div>				
+				<div class="form-group col-md-4">
+					<label for="Categoria">Categoria</label>					
+					<select class="form-control" id="Categoria">
+						<option>Urbana</option>
+						<option>Dobráveis</option>
+						<option>Fixa</option>
+						<option>Speed/Estrada/Corrida</option>
+						<option>BMX</option>
+						<option>Downhill</option> 
+						<option>Reclinada</option>
+						<option>Bike Trial</option>
+						<option>Infantil</option>
+						<option>Elétrica/Híbrida</option>						
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-4">
+					<label for="HorarioFuncInicial">Horário Inicial</label>
+					<input type="time" value="08:00" required class="form-control" id="HorarioFuncInicial">
+				</div>				
+				<div class="form-group col-md-4">
+					<label for="HorarioFuncFinal">Horário Final</label>
+					<input type="time" value="22:00" required class="form-control" id="HorarioFuncFinal">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="Preco">Preço</label>
+					<input type="number" min="0.00" max="10000.00" value="0.01" step="0.01" required class="form-control" id="Preco">
+				</div>	
+			</div>
+			<div class="row">	
+				<div class="form-group col-md-4">
+					<label for="UrlLojaImagem">Url da loja</label>
+					<input type="url" required class="form-control" id="UrlLojaImagem">
+				</div>						
+				<div class="form-group col-md-4">
+					<label for="UrlBikeImagem">Imagem da Bike (url)</label>
+					<input type="url" required class="form-control" id="UrlBikeImagem">
+				</div>
+			</div>
+			<hr />
+			<div id="actions" class="row">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-primary">Salvar</button>
+					<a href="index.html" class="btn btn-default">Cancelar</a>
+				</div>
+			</div>
+		</form>
+	</div>
+		<!-- Optional JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="./js/minhabike.add.js"></script>
+</body>
+</html>
