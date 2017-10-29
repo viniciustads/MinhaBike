@@ -12,7 +12,6 @@ $( "#addBike" ).submit(function( event ) {
     $.ajax({
         type: "POST",
         url: "http://localhost:4004/api/bikes",
-        // The key needs to match your method's input parameter (case-sensitive).
         data: JSON.stringify(objeto),
         contentType: "application/json; charset=utf-8",
         dataType: "json",

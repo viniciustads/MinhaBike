@@ -12,3 +12,9 @@ body > div.container-fluid
 {
     padding: 0;
 }
+
+.consultar
+{
+    cursor: pointer;
+    color: #0778f1;
+}
