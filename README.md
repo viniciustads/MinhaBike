@@ -12,3 +12,5 @@ npm install
 ```bash
 nodemon index.js
 ```
+## ACESSANDO
+* Acesse a página index.html
